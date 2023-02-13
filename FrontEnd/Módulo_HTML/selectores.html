@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Selectores</title>
+        <style>
+            *{ /*Se aplicará a todo*/
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            body{ /*Solo se aplica a lo que esté en la etiqueta body*/
+                background-color: aqua;
+            }
+
+            p{ /*Solo se aplicará a lo que esté dentro de la etiqueta p*/
+                color: red;
+                text-align: center;
+            }
+
+            #titulo{ /*Se aplica a lo que tiene el id titulo*/
+                color: rgb(200 , 150 , 220); /*Se pone con código rgb o  con hexadecimal o rgba*/
+                text-align: right;
+            }
+
+            .izquierda{ /*Se aplica a la clase izquierda, tiene menos jerarquía que el id*/
+                color: green;
+            }
+
+            p.izquierda{ /*Se aplica a todas las p que tengan la clase izquierda, toma lo que se tiene en la clase .izquierda y le agrega las propiedades o las sobreescribe*/
+                text-decoration: underline;
+                text-align: left;
+            }
+
+            .contraste{ /*Si se quiere agregar una propiedad solo a un elemento se agrega en la clase*/
+                background-color: black;
+            }
+
+            h1,h2,p{
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Header simple</h1>
+        <h2 id="titulo" class="izquierda">Header con id Título</h2>
+        <p>Párrafo simple</p>
+
+        <h3 class="izquierda">Prueba clase Header 3</h3>
+        <p class="izquierda">Prueba clase párrafo</p>
+        <h3 class="izquierda contraste">Prueba múltiples clases párrafo</h3> <!--Le agrega las propiedades de izquierda y de contraste-->
+    </body>
+</html>

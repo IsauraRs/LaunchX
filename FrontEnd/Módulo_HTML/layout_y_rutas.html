@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eng"> <!---->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Layout y Rutas</title> <!--Layout =  marco-->
+
+        <!--En style van propiedades de CSS para estilizar la página, generalmente va en otro archivo-->
+        <style>
+            *{
+
+                box-sizing: border-box;
+
+            }
+
+            body {
+
+                font-family: Arial, Helvetica, sans-serif;
+            } 
+
+            /* Estilo de header */
+            header {
+
+                background-color: #667;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* Crear 2 columnas con la misma posición en la fila */
+            nav {
+
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #ccc;
+                padding: 20px;
+
+            }
+
+            nav ul {
+
+                list-style-type: none;
+                padding: 0;
+
+            }
+
+            article {
+
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+                height: 300px;
+
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+
+                content: "";
+                display: table;
+                clear: both;
+
+            }
+
+            /* Estilo de footer */
+            footer {
+
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                
+            }
+
+            /* Responsive layout */
+            @media (max-width: 600px) {
+
+                nav,
+                article {
+
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <header> <!--Cabecera de una página, es diferente a la cabecera de http, es lo que va hasta arriba-->
+            <h2>Ciudades</h2>
+        </header>
+
+        <!--Navbar es lo de arriba-->
+        <section> <!--Es diferente de div, div sirve también como secciones, pero no es su propósito, sino para pequeñas secciones-->
+            <nav> <!--Navigation-->
+                <ul>
+                    <li><a href="#">Londres</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                </ul>
+            </nav>
+
+            <article> <!--Para moestrar información-->
+                <h1>Londres</h1>
+                <p>Londres es la capital de Inglaterra y es la ciudad más popular del Reino Unido, es la ciudad mas poblada con 13 millones de habitantes en su área metropolitana</p>
+            </article>
+        </section>
+
+        <!--Abre una caja nueva, para que esté dentro de alguna caja preexistente hay que meterlo, por ejemplo en article-->
+        <section>
+            <img src="https://i.imgur.com/VkPf2b6.jpeg" alt="london"/>
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Elementos Compuestos</title>
+    </head>
+    <body>
+        
+        <h1>Explicación de elementos compuestos LaunchX</h1>
+
+        <!--Labels (etiquetas) es con lo que se indica a la aplicación a quién está unido un elemento-->
+        <label for="Input">Ejemplo de Input de Texto</label>
+        <br>
+        <!--Inputs (entradas) es la cajita de texto en donde escribe el usuario-->
+        <input type="text" id="Input1" name="Input1"> <!--Deja escribir casi de forma infinita, a menos qye se indique un límite con maxlength o minlenght-->
+        <input type="text" id="Input2" name="Input2" placeholder="Entrada"> <!--Para qe tenga el valor dentro de la caja como ejemplo-->
+        <br><br>
+
+        <hr>
+        <!--Tipos de Inputs ya tienen una validación para saber qué se necesita poner-->
+        <h2>Input de Texto</h2>
+        <!--El for de label indica para quién es el label-->
+        <label for="correo1">Input de Correo</label><br> <!--Revisa que lleve un @, un nominio y un .algo para saber que es un correo-->
+        <input type="email" id="correo1" name="correo1"><br><br> <!--El id y el nombre son al que va referenciado el for del label. También se usan para selectores de CSS-->
+
+        <label for="numero1">Input de Número</label><br>
+        <input type="number" id="numero1" name="numero1"><br><br>
+
+        <label for="psw1">Input de Password</label><br>
+        <input type="password" id="psw1" name="psw1"><br><br>
+
+        <label for="tel1">Input de Teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br> <!-- max length -> longitud máxima-->
+
+        <label for="url1">Input de URL</label><br> <!--Revisa que lleve un .algo-->
+        <input type="url" id="url1" name="url1"><br><br>
+
+        <hr>
+
+        <h2>Input de Selección Múltiple</h2><br> <!--Check box-->
+        <input type="checkbox" id="topping1" name="topping1" value="Cebolla"><!--El valor dice qué valor se leerá de la selección y poder utilizarlo-->
+        <label for="topping1">Tacos con Cebolla</label><br>
+        <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+        <label for="topping2">Tacos con Cilantro</label><br>
+        <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+        <label for="topping3">Tacos con Salsa</label><br><br>
+
+        <h2>Input de Selección Única</h2><br> <!--Radio groups, solo se puede seleccionar uno del grupo. name indica el nombre del grupo, si se tienen más grupos se puede seleccionar uno de cada grupo-->
+        <input type="radio" id="roja" name="salsas" value="Roja">
+        <label for="roja">Roja</label><br>
+        <input type="radio" id="verde" name="salsas" value="Verde">
+        <label for="verde">Verde</label><br>
+        <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+        <label for="guacamole">Guacamole</label><br><br>
+        <!--Radio buttons-->
+
+        <h2>Select</h2> <!--Lista de selección-->
+        <label for="tacos">De qué la orden</label>
+        <select id="tacos" name="tacos"> <!---->
+            <option value="suadero">Suadero</option>
+            <option value="campechanos">Campechanos</option>
+            <option value="tripa">Tripa</option>
+        </select>
+
+        <h2>Select con Input</h2> <!--Aparecen las opciones al dar click, pero se puede tener una entrada de texto, como cuando se tienen muchas opciones, da todas las opciones en donde contenga la letra que se escribió-->
+        <label for="refresco">Elige tu refresco favorito</label><br>
+        <input list="refresco"> <!--En dónde se va a escribir, está referenciado a la lista de opciones-->
+        <datalist id="refresco"> <!--La lista se puede referenciar desde diferentes lugares-->
+            <option value="Coca-Cola">
+            <option value="Manzana">
+            <option value="Naranja">
+            <option value="Mango">
+            <option value="Guayaba">
+        </datalist>
+        <br><br>
+
+        <hr>
+
+        <h2>Input de Fecha</h2><br> <!--br salto de línea-->
+        <input type="date" id="fecha1" name="fecha1"><br> <!--Día mes año por default es el día actual-->
+        <input type="datetime-local" id="fech<input type="file" id="archivo1" name="archivo1" multiple><br><br>a2" name="fecha2"><br><!--Día mes año hora-->
+        <input type="week" id="fecha3" name="fecha3"><br> <!--Semana-->
+        <input type="time" id="fecha4" name="fecha4"><br> <!--Hora-->
+        <input type="month" id="fecha5" name="fecha5"><br><br> <!--Mes-->
+
+        <hr>
+        <h2>Input de Archivo</h2><br>
+        <input type="file" id="archivo1" name="archivo1" multiple><br> <!--multiple es una propiedad que permite subir varios archivos-->
+        <input type="file" id="archivo2" name="archivo2" multiple size="20mb"><br><br> <!--Size indica el peso del archivo-->
+
+        <h2>Input de Color</h2>
+        <input type="color" id="color1" name="color1"><br><br> <!--Sirve para seleccionar un color-->
+
+        <h2>Input de Rango</h2>
+        <label for="vol">Volumen (entre 0 y 50): </label><br>
+        <input type="range" id="vol" name="vol" min="0" max="50" value="20"><br><br> <!--Input de tipo rango, value indica el valor inicial, si no se indica, iniciará en medio-->
+
+        <h2>Input de Botón</h2> <!--Tienen una acción y un texto preestablecido dependiendo de su tipo-->
+        <input type="reset"><br>
+        <input type="submit"><br>
+        <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br> <!--Se usa el tipo button cuando no se requiere de un botón de los otros tipos. onclick es que cuando de el click va a dar el mensaje de alerta-->
+
+        <hr> <!--Hace las rayitas de separación-->
+        <h2>Ejemplo de Formulario</h2> <!--Formularios-->
+        <form action="/accion.js" id="form1" method="post"> <!--La etiqueta form indica que ahí va un formulario, action indica qué se va a hacer, es el archivo de javascript. method es del protocolo de http-->
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <input type="submit" value="Submit"> <!--Envía al archivo-->
+            <button type="submit">Enviar</button> <!--Detecta en dónde está, revisa la acción del formulario y lo envía-->
+            <input type="reset">
+        </form>
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" id="apellido" name="apellido" form="form1"> <!--Aunque esté fuera del formulario, con la etiqueta form lo referencía, los botones lo afectan de igual manera-->
+        <!--id es para referencias y el name es para el orden u organización del archivo. Es recomendable que sean iguales por la limpieza del texto-->
+
+    </body>
+</html>

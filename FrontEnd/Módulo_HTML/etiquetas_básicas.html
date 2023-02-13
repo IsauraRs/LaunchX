@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--- Indica al navegador que es HTML --->
+
+<html lang = "en"> <!-- Etiqueta raíz, contiene a todas las demás etiquetas, lang es la propiedad language, es recomendable dejarlo en inglés porque 
+    los navegadores están en inglés.-->
+
+    <head> <!-- Etiqueta de header, los títulos son headings, los headers son cabeceras que tienen información sobre la página-->
+
+        <meta charset="UTF-8"> <!--Metadata: es información que da información respecto a cómo construir un sitio, el charset es para elegir la 
+            codificación de caracteres que se va a estar utilizando-->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- Metadata que sea equivalente por http y el contenido sea compatible con Internet Explorer edge-->
+        <meta name="viweport" content="width=device-width , initial-scale = 1.0"> <!--Metadata que sea el viewport y el contenido esté con el ancho del dispositivo
+        Con escala inicial = 1.0 (no tiene escala). Viewport es cómo se va a visualizar el sitio-->
+        <title>Práctica 1 LaunchX</title> <!--Es el título que está en la pestañita de arriba del navegador-->
+
+    </head>
+    <body> <!--Todo el contenido que se verá dentro de la página-->
+        <!--Headings: son títulos, cambian de tamaño y ayudan a definir jerarquías (títulos, subtítulos, qué información es más importante). Generalmente se usa hasta el 3-->
+        <h2>Headings</h2>
+        <h1>Bienvenidos Explorers</h1>
+        <h2>Bienvenidos Explorers</h2>
+
+        <!--Párrafos: se hace con la etiqueta <p> contenido en texto del sitio. No tiene nivel de jerarquía contra los headings, lo que va es lo que se busca en los navegadores.<br> es un salto
+        de línea. Se pueden poner etiquetas dentro de las etiquetas.-->
+        <h2>Párrafos</h2>
+        <p>Este es un párrafo.
+            Este sigue siendo un <br> párrafo.
+            Es parte del párrafo.
+        </p>
+        <p>Más información que queramos poner en un párrafo html se mostrará aquí. <br> Se hizo un salto de línea para que no quede apretado</p>
+        <!--Cada etiqueta se convierte en una sección (hay espacio entre ellas)(box model, se tiene en una caja)-->
+        
+        <!--Links / Enlaces se hace con la etiqueta <a> (anchor).  El link hace referencia a una URL, el target le dice al sitio si lo abre en la misma pestaña o a una nueva
+            blank lo abre en una nueva, parent lo abre en la inicial, self lo abre en la misma, top lo abre en el contexto del navegador-->
+        <!-- Las etiquetas pueden tener propiedades, que son las que definen ciertos valores dentro de lo que se tiene-->
+        <h2>Enlaces</h2>
+        <a href = "https://github.com/Launch-X-Latam" target = "_blank">Link a LaunchX</a>
+        <!-- Se puede hacer que <a> abra un archivo. Le decimos al navegador a dónde debe ir.-->
+        <br> 
+
+        <!--Imágenes: estas etiquetas no se cierran. Propiedades: src (source) es la fuente de la imagen (es como href). alt (texto alternativo) para accesibilidad
+        width(ancho) height(alto) de la imagen-->
+        <h2>Imágenes</h2>
+        <img src="https://i.imgur.com/84QT6os.jpg" alt = "Perritos lindos" width = "350px" height="350px">
+        <h2>Imágenes con enlace</h2>
+        <!-- La imagen puede meterse en el link para que al darle click te lleve a un enlace-->
+        <a href = "https://github.com/Launch-X-Latam" target = "blank">
+            <img src="https://i.imgur.com/84QT6os.jpg" alt = "Perritos lindos" width = "350px" height="350px">
+        </a>
+
+        <!--Tablas: para organizar información de manera sencilla, se tiene una jerarquía empezando con <table> indica dónde empieza y acaba la tabla, 
+            <tr> table row, cada que se quiere agregar una fila. <th> table heading, los títulos de la tabla. <td> table data, los datos dentro de la tabla-->
+        <h2>Tablas</h2>
+        <table>
+            <tr>
+                <th>Compañía</th>
+                <th>Contacto</th>
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>María Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro Comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>México</td>
+            </tr>
+            <tr>
+                <td>Shell</td>
+                <td>Alicia Urbina</td>
+                <td>Alemania</td>
+            </tr>
+        </table>
+        <!--Listas: se pueden usar como bullets <ul> unordered list, son puntitos para indicar puntitos. <ol> son ordered lists, van con números, 
+            <dl> description list <dd> description data (describe a la dl)-->
+        <h2>Listas</h2>
+        <ul>
+            <li>Café</li>
+            <li>Arroz</li>
+            <li>Leche</li>
+            <li>Huevos</li>
+        </ul>
+
+        <ol>
+            <li>Alumno 1</li>
+            <li>Alumno 2</li>
+            <li>Alumno 3</li>
+        </ol>
+        <dl>
+            <dt>Enchiladas</dt>
+            <dd>- Tortillas</dd>
+            <dt>Molletes</dt>
+            <dd>- Bolillo</dd>
+        </dl>
+
+    </body>
+</html>
