@@ -5,9 +5,25 @@
 .contenedor{
     min-height: 400px;
     background-color: rgb(166, 218, 218);
-    max-width: 400px;
+    /*max-width: 400px;*/
+    display: flex;
+    justify-content: space-around; /*Para la parte horizontal*/
+    align-items: center; /*Para la parte vertical*/
+    /*flex-direction: column;*/ /*Para darle una dirección*/
+    flex-wrap: wrap;
 }
 
-.centrado{
+/*.centrado{
     text-align: center;
+}*/
+
+
+.elemento{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    border-color: #fff;
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px;
 }

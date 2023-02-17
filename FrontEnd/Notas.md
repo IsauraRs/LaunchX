@@ -487,8 +487,6 @@ Es más fácil usar clases
 
 Se puede definir el color solo con el nombre, o específico de un programa de diseño, con RGB, RGBA, HEX o HSL
 
-1:03:07 Segundo Live
-
 
 Texto decorado --> como en los links
 
@@ -517,6 +515,25 @@ Elementos --> Child --> items
 order --> en qué orden se acomodarán los elementos
 
 
-flex-grow --> uno de los elementos ocupa más espacio que el resto
+flex-grow --> uno de los elementos ocupa más espacio que el resto, utilizar de una fila una columna, dos columnas, una columna
 
 
+flex-shrink --> para encoger 
+
+
+align-self --> para un solo elemento 
+
+
+space-around --> los elementos tienen el mismo espacio al rededor
+
+
+Se puede agregar una dirección vertical (la inicial es horizontal) (en forma de columna)
+
+
+flex-wrap --> Para hacerlo repsonsive (los elementos se acomodan de acuerdo al tamaño de la ventana)
+
+
+margin (distancia interna), border (borde de los elementos(de la caja)), paddidng (distancia interna entre elementos (entre la caja y el contenido)) --> cómo interactúan entre elementos 
+
+
+09:14 css movil
